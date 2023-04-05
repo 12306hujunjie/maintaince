@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "maintaincePython"
+version = "0.1.0"
+description = ""
+authors = ["12306hujunjie <545512690@qq.com>"]
+license = "Apache License"
+
+[[tool.poetry.source]]
+name = "aliyun"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = "^3.9"
+docker = "^6.0.1"
+
+[tool.poetry.dev-dependencies]
+mypy = "^0.950"
+pre-commit = "^2.18.1"
+pyupgrade = "^2.32.0"
+reorder-python-imports = "^3.0.1"
+black = "^22.3.0"
+flake8 = "^4.0.1"
+pre-commit-hooks = "^4.2.0"
+poetry = "1.2.0b1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
